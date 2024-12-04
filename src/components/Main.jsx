@@ -24,21 +24,72 @@ const Main = () => {
         </p>
       </div>
       <div className="grid grid-cols-3 ">
-        <img className="img" src={photo1} alt="photo1" />
-        <img className="img" src={photo2} alt="photo2" />
-        <img className="img" src={photo3} alt="photo3" />
+        <div className="relative">
+          <img className="img" src={photo1} alt="photo1" />
+          <div className=" absolute bottom-[1rem] left-[1rem] bg-white">
+            <p className="font-bold text-transform: uppercase">Latte art workshop</p>
+            <p className="text-xs">20 Feb 2023</p>
+          </div>
+        </div>
+        <div className="relative">
+          <img className="img" src={photo2} alt="photo2" />
+          <div className=" absolute bottom-[1rem] left-[1rem] bg-white">
+            <p className="font-bold text-transform: uppercase">Exhibition cofee hardware</p>
+            <p className="text-xs">20 Mar 2023</p>
+          </div>
+        </div>
+        <div className="relative">
+          <img className="img" src={photo3} alt="photo3" />
+          <div className=" absolute bottom-[1rem] left-[1rem] bg-white">
+            <p className="font-bold text-transform: uppercase">Factory visit</p>
+            <p className="text-xs">20 Apr 2023</p>
+          </div>
+        </div>
       </div>
-      <h2 className="text-[4rem]">Events Closed</h2>
+      <h2 className="text-[4rem] py-[1rem]">Events Closed</h2>
       <div className="grid grid-cols-3 ">
-        <img className="col-span-2 img2" src={photo1} alt="photo1" />
-        <img className="img" src={photo2} alt="photo2" />
-        <img className="img" src={photo1} alt="photo1" />
-        <img className="img" src={photo2} alt="photo2" />
-        <img className="img" src={photo3} alt="photo3" />
-        
+      <div className="relative col-span-2">
+          <img className=" img2" src={photo1} alt="photo1" />
+          <div className=" absolute bottom-[1rem] left-[1rem] bg-white">
+            <p className="font-bold text-transform: uppercase">Bezzera latte competition</p>
+            <p className="text-xs">20 Feb 2023</p>
+          </div>
+        </div>
+        <div className="relative">
+          <img className="img" src={photo2} alt="photo2" />
+          <div className=" absolute bottom-[1rem] left-[1rem] bg-white">
+            <p className="font-bold text-transform: uppercase">Sensory and cupping class</p>
+            <p className="text-xs">20 Mar 2023</p>
+          </div>
+        </div>
+        <div className="relative">
+          <img className="img" src={photo1} alt="photo1" />
+          <div className=" absolute bottom-[1rem] left-[1rem] bg-white">
+            <p className="font-bold text-transform: uppercase">Public cupping</p>
+            <p className="text-xs">20 Feb 2023</p>
+          </div>
+        </div>
+        <div className="relative">
+          <img className="img" src={photo2} alt="photo2" />
+          <div className=" absolute bottom-[1rem] left-[1rem] bg-white">
+            <p className="font-bold text-transform: uppercase">Competitions and showcases</p>
+            <p className="text-xs">20 Mar 2023</p>
+          </div>
+        </div>
+        <div className="relative">
+          <img className="img" src={photo3} alt="photo3" />
+          <div className=" absolute bottom-[1rem] left-[1rem] bg-white">
+            <p className="font-bold text-transform: uppercase">Art and cofee festival</p>
+            <p className="text-xs">20 Mar 2023</p>
+          </div>
+        </div>
       </div>
 
-      <div className=" text-center py-5"><button className="py-2 px-5 border-2 border-amber-800 text-amber-800">Load More</button></div>
+      <div className=" text-center py-5">
+        <button className="py-2 px-5 border-2 border-amber-800 text-amber-800">
+          Load More
+        </button>
+      </div>
     </div>
   );
 };
