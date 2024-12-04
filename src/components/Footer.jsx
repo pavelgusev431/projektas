@@ -19,7 +19,7 @@ function Footer() {
           </div>
         </div>
 
-        <div className="flex flex-row justify-around items-center">
+        <div className="flex flex-row justify-around w-full items-center">
           <div>
             <span className="material-icons text-white my-3 text-3xl">
               mail delete cancel logout home
