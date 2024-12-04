@@ -1,7 +1,11 @@
+import photo1 from "../img/Photo1.jpg";
+import photo2 from "../img/Photo2.jpg";
+import photo3 from "../img/Photo3.jpg";
+
 const Main = () => {
   return (
-    <div>
-      <div className="grid grid-cols-2 p-[5rem]">
+    <div className="p-[5rem]">
+      <div className="grid grid-cols-2 my-9">
         <h1 className="text-[5rem]">
           Our Upcoming
           <br />
@@ -19,11 +23,22 @@ const Main = () => {
           including versions of Lorem Ipsum.
         </p>
       </div>
-      <div>
-
-
+      <div className="grid grid-cols-3 ">
+        <img className="img" src={photo1} alt="photo1" />
+        <img className="img" src={photo2} alt="photo2" />
+        <img className="img" src={photo3} alt="photo3" />
+      </div>
+      <h2 className="text-[4rem]">Events Closed</h2>
+      <div className="grid grid-cols-3 ">
+        <img className="col-span-2 img2" src={photo1} alt="photo1" />
+        <img className="img" src={photo2} alt="photo2" />
+        <img className="img" src={photo1} alt="photo1" />
+        <img className="img" src={photo2} alt="photo2" />
+        <img className="img" src={photo3} alt="photo3" />
         
       </div>
+
+      <div className=" text-center py-5"><button className="py-2 px-5 border-2 border-amber-800 text-amber-800">Load More</button></div>
     </div>
   );
 };
